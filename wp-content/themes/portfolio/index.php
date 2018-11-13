@@ -3,11 +3,6 @@
 ?>
 
 <div class="welcome-content">
-<h1>Christian Wickerström - UX Designer and Developer</h1>
-<p>Welcome to my portfolio, which is still in progress. Meanwhile, 
-check out my 
-<a target="_blank" href="https://github.com/Wickerman2">GitHub</a> 
-or 
-<a target="_blank" href="https://www.linkedin.com/in/christian-wickerstr%C3%B6m-973a53b0/">LinkedIn </a>. 
-  Or just e-mail me at christian[at]wickerstrom.com! <p>
+    <h1>Hello, I'm Christian!</h1>
+    <p>UX Designer & Front-end Developer based in Gothenburg, Sweden.<p>
 </div>
