@@ -60,8 +60,13 @@ a {
   width: 100%;
 }
 
-.contact-wrapper, .project-wrapper {
+.project-wrapper {
   width: 70%;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  width: 50%;
   margin: 0 auto;
 }
 
