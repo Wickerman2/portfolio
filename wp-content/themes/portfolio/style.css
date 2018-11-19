@@ -8,20 +8,22 @@ textdomain: portfolio
 .page-title {
   text-align: center;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
-li > a {
+.navbar {
+  background-color: #191919 !important;
+}
+.navbar li > a {
   color: black;
 }
-
-li {
+.navbar li {
   display: inline;
   float: right;
   margin: 1em;
   color: black;
 }
-
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,6 +32,7 @@ ul {
 
 body {
   font-family: "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  background-color: #F2F3F5;
 }
 
 a {
@@ -61,13 +64,24 @@ a {
 }
 
 .project-wrapper {
+  padding-top: 1.2em;
   width: 70%;
   margin: 0 auto;
 }
 
 .contact-wrapper {
-  width: 50%;
+  padding-top: 1.2em;
+  width: 60%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 770px) {
+  .contact-wrapper {
+    width: 90%;
+  }
+}
+.resume-wrapper {
+  padding-top: 1.2em;
 }
 
 .welcome-content {
@@ -153,6 +167,11 @@ a.custom-card,
 a.custom-card:hover {
   color: inherit;
   text-decoration: none;
+}
+
+.card {
+  border-style: none;
+  border-radius: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

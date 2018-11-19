@@ -3,42 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>Christian Wickerström - UX Designer and Developer</title>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/bootstrap.min.css"">
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css">
-<?php wp_head(); ?>
+
+<?php wp_head(); 
+
+?>
 
 </head>
 
 <body> 
 
 <header class="header">  
-<?php 
-/*
-wp_nav_menu( $arg = array(
-  'menu_class' => 'main-navigation',
-  'theme_location' => 'primary'
-) );
-*/
-?>
-<div id="main_navbar" class="navbar navbar-expand-md navbar-light bg-light">
-    <!-- you can remove this container wrapper if you want things full width -->
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark custom-nav-bar" role="navigation">
     <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'best-reloaded' ); ?>">
-            <span class="navbar-toggler-icon"></span><span class="sr-only"><?php esc_html_e( 'Toggle Navigation', 'themeslug' ); ?></span>
-        </button>
-        <nav class="collapse navbar-collapse" id="headerNav" role="navigation" aria-label="Main Menu">
-            <span class="sr-only"><?php esc_html_e( 'Main Menu', 'themeslug' ); ?></span>
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'depth' => 1,
-                'container' => false,
-                'menu_class' => 'main-navigation',
-                'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                'walker' => new WP_Bootstrap_Navwalker(),
-            ) );
-        ?>
-        </nav>
+
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <?php
+      wp_nav_menu( array(
+        'theme_location'    => 'primary',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-example-navbar-collapse-1',
+        'menu_class'        => 'nav navbar-nav',
+        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'            => new WP_Bootstrap_Navwalker(),
+      ) );
+      ?>
     </div>
-</div>
+  </nav>
 
 </header>

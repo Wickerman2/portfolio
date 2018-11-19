@@ -2,7 +2,7 @@
 /* Template Name: Projects Page Template */
 get_header();
 echo '<div class="projects-wrapper">';?>
-<h1 class="page-title"><?php echo single_post_title(); ?></h1> <?php
+<?php
 
 $post_id = 'project';
 
@@ -15,7 +15,9 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post();
 
     $description = get_post_meta( $post->ID, "description", true );
+    $category = get_post_meta( $post->ID, "category", true );
     $cover_image = get_post_meta( $post->ID, "cover_image", true );
+
     
     $img = wp_get_attachment_image_src($cover_image);
     ?>
@@ -32,6 +34,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
               <div class="project-details">
                 <div class="card-block px-3">
                   <h2 class="card-title"><?php echo the_title(); ?></h2>
+                  <p class="card-text"><i><?php echo $category ?> </i></p>
                   <p class="card-text"><?php echo $description ?> </p>
                 </div>
                 </div>

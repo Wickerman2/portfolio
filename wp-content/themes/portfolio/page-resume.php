@@ -3,8 +3,7 @@
 get_header();
 echo '<div class="resume-wrapper">';
 ?>
-
-<h1 class="page-title"><?php echo single_post_title(); ?></h1> <?php
+<?php
 echo '<div class="row">';
 
 echo '<div class="col-sm-6">';
