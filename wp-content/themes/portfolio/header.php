@@ -17,8 +17,6 @@
 <header class="header">  
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark custom-nav-bar" role="navigation">
-    <div class="container">
-
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,7 +32,6 @@
         'walker'            => new WP_Bootstrap_Navwalker(),
       ) );
       ?>
-    </div>
   </nav>
 
 </header>

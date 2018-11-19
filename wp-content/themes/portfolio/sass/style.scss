@@ -13,6 +13,7 @@ textdomain: portfolio
 
 .navbar {
     background-color: #191919 !important;
+    width: 100%;
 
     li > a {
         color: black;
@@ -34,7 +35,7 @@ textdomain: portfolio
 }
 
 body {
-    font-family: "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+    font-family: "aktiv-grotesk", "Helvetica Neue", "Helvetica", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
     background-color: #F2F3F5;
 }
 
@@ -44,6 +45,11 @@ a {
     -moz-transition:color .2s ease-out, background 1s ease-in;
     -webkit-transition:color .2s ease-out, background 1s ease-in;
     transition:color .2s ease-out, background 1s ease-in;
+    color: black;
+
+    &:hover {
+        color: black;
+    }
 }
 
 .work-experience {
@@ -67,46 +73,7 @@ a {
     color: #000;
     width: 100%;
 }
-
-
-.project-wrapper {
-    padding-top: 1.2em;
-    width: 70%;
-    margin: 0 auto;
-    
-}
-
-.contact-wrapper {
-    padding-top: 1.2em;
-    width: 60%;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 770px) {
-    .contact-wrapper {
-        width: 90%;
-    }
-  }
-
-.resume-wrapper {
-    padding-top: 1.2em;
-}
-
-
-
-  
-  .welcome-content {
-    margin: 0 auto; 
-    width: 70%;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  .welcome-content, .resume-wrapper {
+.welcome-content, .resume-wrapper, .contact-wrapper, .project-wrapper {
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -146,6 +113,48 @@ a {
       }
   }
 
+.project-wrapper {
+    padding-top: 1.2em;
+    width: 70%;
+    margin: 0 auto;  
+}
+
+.projects-wrapper {
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+}
+.contact-wrapper {
+    padding-top: 1.2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 770px) {
+    .contact-wrapper {
+        width: 90%;
+    }
+  }
+
+.resume-wrapper {
+    padding-top: 1.2em;
+}
+
+
+
+  
+  .welcome-content {
+    margin: 0 auto; 
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+
   .project-container {
     -webkit-transition: 0.3s ease-out;
     -moz-transition: 0.3s ease-out;
@@ -178,3 +187,9 @@ a.custom-card:hover {
     border-style: none;
     border-radius: 0px;
 }
+@media screen and (max-width: 770px) {
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+  }
