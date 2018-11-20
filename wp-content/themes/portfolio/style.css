@@ -73,7 +73,7 @@ a:hover {
   width: 100%;
 }
 
-.welcome-content, .resume-wrapper, .contact-wrapper, .project-wrapper, .projectlist-wrapper {
+.welcome-content, .resume-wrapper, .contact-wrapper, .project-wrapper, .projects-wrapper {
   animation: fadein 1.2s;
   -moz-animation: fadein 1.2s;
   /* Firefox */
@@ -135,15 +135,15 @@ a:hover {
   margin: 0 auto;
 }
 
+.resume-wrapper {
+  padding-top: 1.7em;
+}
+
 @media screen and (max-width: 770px) {
   .contact-wrapper {
     width: 90%;
   }
 }
-.resume-wrapper {
-  padding-top: 1.2em;
-}
-
 .welcome-content {
   margin: 0 auto;
   width: 70%;

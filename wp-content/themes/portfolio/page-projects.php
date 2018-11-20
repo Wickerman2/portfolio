@@ -1,9 +1,6 @@
 <?php
 /* Template Name: Projects Page Template */
-
 get_header();
-echo '<div class="projects-wrapper">';?>
-<?php
 
 $post_id = 'project';
 
@@ -21,8 +18,8 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
     
     $img = wp_get_attachment_image_src($cover_image);
-    ?>
-  
+    
+  echo '<div class="projects-wrapper">';?>
   <section>
     <div class="container py-3">
       <a href="<?php echo get_page_link(); ?>" class="custom-card">
@@ -60,6 +57,8 @@ echo '</div>';
 
 
 echo '</div>';
+
+
 
 // Inspiration:
 // UX + Frontend-dev: http://erikbue.com/
