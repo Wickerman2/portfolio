@@ -1,5 +1,6 @@
 <?php
 /* Template Name: Projects Page Template */
+
 get_header();
 echo '<div class="projects-wrapper">';?>
 <?php
@@ -49,6 +50,8 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 
     echo '</div>';
+
+
 
     echo '<br>';
 endwhile;

@@ -11,6 +11,11 @@ textdomain: portfolio
   margin-top: 1em;
 }
 
+img.centered, .aligncenter, .aligncenter img {
+  display: block;
+  margin: 0 auto 22px;
+}
+
 .navbar {
   background-color: #191919 !important;
   width: 100%;
@@ -68,13 +73,13 @@ a:hover {
   width: 100%;
 }
 
-.welcome-content, .resume-wrapper, .contact-wrapper, .project-wrapper {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
+.welcome-content, .resume-wrapper, .contact-wrapper, .project-wrapper, .projectlist-wrapper {
+  animation: fadein 1.2s;
+  -moz-animation: fadein 1.2s;
   /* Firefox */
-  -webkit-animation: fadein 2s;
+  -webkit-animation: fadein 1.2s;
   /* Safari and Chrome */
-  -o-animation: fadein 2s;
+  -o-animation: fadein 1.2s;
   /* Opera */
 }
 
